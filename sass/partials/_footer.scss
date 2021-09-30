@@ -1,0 +1,189 @@
+.footer {
+  a {
+    text-decoration: none;
+  }
+  .footer-padding {
+    padding: 50px 0px;
+  }
+  .footer-social-media-icons {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.666rem;
+      li {
+        margin-right: 25px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .footer-sub-menu-title {
+    @include footer-menu-title();
+    position: relative;
+    margin-bottom: 30px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: calc(3px - 0.5px);
+      background: $white;
+    }
+  }
+  .footer-sub-menu {
+    ul {
+      li {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          color: $white;
+          text-decoration: none;
+          font-size: $font-sm;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .find-our-store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $white;
+    border-radius: 15px;
+    padding: 20px;
+    height: 120px;
+    .location-icon {
+      img {
+        margin-right: 40px;
+      }
+    }
+    .location-context {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 65px;
+        background: $white;
+        top: 0;
+        left: -15px;
+      }
+      p {
+        @include location-context($font-sm, $font-semi-medium, 24px, $white);
+      }
+      h2 {
+        @include location-context($font-mlg, $font-medium, 48px, $white);
+        @include media(">tablet", "<desktop") {
+          @include location-context($font-ssmd, $font-medium, 36px, $white);
+        }
+        @include media(">desktop", "<LGdesktop") {
+          @include location-context($font-ssmd, $font-medium, 36px, $white);
+        }
+      }
+    }
+  }
+  .contact-area {
+    ul {
+      margin-top: 21px;
+      margin-left: 10px;
+      li {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          color: $white;
+          font-size: $font-sm;
+          font-weight: $font-medium;
+          text-decoration: none;
+          img {
+            margin-right: 1.05rem;
+          }
+        }
+      }
+      @include media("<=tablet") {
+        text-align: center;
+      }
+    }
+  }
+  @include footer-bg($primary-color-2, $footer-bg-img);
+  .footer-copywrite {
+    padding: 25px 20px;
+    border-top: 1px solid #fff;
+    .footer-copywrite-area {
+      max-width: 1520px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: normal;
+      align-content: normal;
+      .footer-copywrite-context {
+        .footer-copy-write-area {
+          @include footer-credit($font-family-primary);
+          p {
+            transform: translate(0, 30%);
+          }
+          @media only screen and (max-width: 992px) {
+            text-align: center;
+            p {
+              transform: translate(0, 50%);
+            }
+          }
+        }
+      }
+      .footer-copywrite-payment-icon {
+        text-align: right;
+        ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          li {
+            list-style: none;
+            display: inline-flex;
+            margin-right: 20px;
+            &:last-child {
+              margin-right: 0;
+            }
+            img {
+              @media only screen and (max-width: 768px) {
+                width: 50px;
+              }
+            }
+            @media only screen and (max-width: 768px) {
+              margin-right: 13px;
+            }
+          }
+        }
+        @media only screen and (max-width: 992px) {
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      border-top: 0;
+    }
+  }
+  @include media("<=tablet") {
+    .col-6 {
+      order: 2;
+    }
+    col-12 {
+      order: 1;
+    }
+  }
+  @include media("<=991px") {
+    padding-bottom: 60px;
+    background-position: calc(100%) calc(100% - 60px);
+    background-size: inherit;
+    overflow: hidden;
+  }
+}

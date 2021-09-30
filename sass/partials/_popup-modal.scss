@@ -1,0 +1,139 @@
+//mixin
+@mixin lsHeaderTitle($fontSize, $color, $lineHeight, $tt, $fontWeight) {
+  font-size: $fontSize;
+  color: $color;
+  line-height: $lineHeight;
+  text-transform: $tt;
+  font-weight: $fontWeight;
+}
+
+.popup-modal-global {
+  .modal-dialog {
+    max-width: 1000px;
+    @include media("<=991px") {
+      max-width: 100%;
+    }
+  }
+  .modal-content {
+    border: 0;
+    border-radius: 10px;
+    .modal-body {
+      padding: 60px 0px 90px 0px;
+      .ls-modal-body-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:first-child {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+.ls-header-title {
+  @include lsHeaderTitle($font-mlg, $grey-5, 48px, uppercase, $font-medium);
+  transform: translateX(45%);
+}
+
+.ls-action-btn {
+  @include lsHeaderTitle(
+    $font-smd,
+    $primary-color,
+    30px,
+    uppercase,
+    $font-medium
+  );
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    margin-right: 100px;
+  }
+}
+
+.ls-form-area {
+  margin-top: 90px;
+  form {
+    max-width: 350px;
+    margin: 0 auto;
+    .form-group {
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      label {
+        @include lsHeaderTitle(
+          $font-smd,
+          $dark-1,
+          30px,
+          capitalize,
+          $font-semi-medium
+        );
+        margin-bottom: 10px;
+      }
+      input {
+        border: 0;
+        background: $light-grey-1;
+        border-radius: 10px;
+        font-size: $font-sm;
+        padding: 18px 30px;
+        &::placeholder {
+          color: $grey-6;
+          font-size: $font-sm;
+        }
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+.ls-modal-body-button {
+  margin-top: 77px;
+}
+
+#mPasswordArea {
+  display: none;
+}
+
+#mOtpMesasge {
+  display: none;
+  margin-top: 58px;
+  margin-bottom: 50px;
+  p {
+    font-size: $font-sm;
+    line-height: 24px;
+    color: #cecece;
+    span {
+      color: #c4c4c4;
+      font-size: $font-smd;
+      line-height: 30px;
+      font-weight: $font-semi-medium;
+    }
+  }
+}
+
+#otpArea {
+  display: none;
+  small {
+    a {
+      text-decoration: none;
+      font-size: $font-xs;
+      line-height: 21px;
+      color: $gray-7;
+      margin-top: 7px;
+      margin-left: 15px;
+    }
+  }
+}
+
+#veri-next {
+  display: none;
+  margin: 0 auto;
+}
+
+#p-confirm {
+  display: none;
+  margin: 0 auto;
+}

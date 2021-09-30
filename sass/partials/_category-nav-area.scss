@@ -1,0 +1,67 @@
+.category-nav-area {
+  ul {
+    border: 1px solid $light-grey-4;
+    li {
+      background: $light-grey-1;
+      padding: 10px 15px;
+      border-bottom: 1px solid $light-grey-4;
+      &:last-child {
+        border-bottom: 0;
+      }
+      a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: center;
+        color: $dark;
+        text-decoration: none;
+        text-transform: capitalize;
+        cursor: pointer;
+        line-height: 21px;
+        transition: all ease-in 0.2s;
+        span {
+          &:nth-child(1) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            margin-right: 20px;
+          }
+          &:nth-child(2) {
+            display: block;
+            flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            font-size: $font-xs !important;
+          }
+          &:nth-child(3) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            transition: all ease 0.3s;
+            transform-style: preserve-3d;
+          }
+        }
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  @include media("<=991px") {
+    display: none;
+  }
+}
+
+.category-nav-area ul li a:hover .nav-arrow {
+  transform: rotateY(180deg);
+}

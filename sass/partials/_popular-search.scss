@@ -1,0 +1,33 @@
+.popular-search-area {
+  padding: 91px 0 100px 0;
+  .container {
+    background: $light-grey-1;
+  }
+  &__title {
+    @include title-2($primary-color);
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  &_pills {
+    ul {
+      text-align: center;
+      padding-bottom: calc(66px - 15px);
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        a {
+          font-size: $font-xs;
+          color: $grey-5;
+          text-transform: capitalize;
+          line-height: 21px;
+          text-decoration: none;
+          background: $light-grey-3;
+          padding: 6px 11px 7px 11px;
+          border-radius: 5px;
+          display: block;
+        }
+      }
+    }
+  }
+}

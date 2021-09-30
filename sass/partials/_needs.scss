@@ -1,0 +1,32 @@
+.needs-area {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  .needs-area-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media("<=tablet") {
+      flex-direction: column;
+    }
+  }
+  &__tabs {
+    @include title-1(block);
+    text-align: center;
+    padding: 22px 0;
+    text-decoration: none;
+    transition: ease all 0.4s;
+    max-width: 450px;
+    width: 450px;
+    &:hover {
+      color: $white;
+      background: $primary-color;
+    }
+    @include media("<=tablet") {
+      width: 100%;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

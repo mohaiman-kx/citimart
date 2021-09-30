@@ -1,0 +1,180 @@
+.product-category-area {
+  .container {
+    padding-top: 100px;
+  }
+  .product-category-title {
+    p {
+      @include product-category-title($grey-3, 50px);
+    }
+  }
+  .product-showcase-area {
+    .card {
+      border: 0;
+
+      .main-card-area {
+        box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+        .main-card-img {
+          padding: 100% 0 0 0;
+          position: relative;
+          cursor: pointer;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+          }
+        }
+        .add-card-area {
+          background: $light-grey-2;
+          border-bottom: 3px solid $primary-color;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          align-content: space-around;
+          .product-show-icon {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            padding: 17px;
+            img {
+              width: 18px;
+            }
+          }
+          .add-card-button {
+            display: block;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            text-align: center;
+            button {
+              color: $primary-color;
+              font-size: 18px;
+              line-height: 18px;
+              text-decoration: none;
+              cursor: pointer;
+              border: 0;
+              background: $light-grey-2;
+              padding: 17px 0px;
+            }
+          }
+          .add-product-modal {
+            border-right: 1px solid $white;
+          }
+          .add-to-favorite {
+            border-left: 1px solid $white;
+          }
+        }
+      }
+      .product-content {
+        margin-top: 30px;
+        .product-name {
+          font-size: $font-xs;
+          line-height: 32px;
+          color: $grey-4;
+          margin-bottom: 5px;
+          text-transform: capitalize;
+        }
+        .product-prize {
+          font-size: $font-smd;
+          font-weight: $font-semi-medium;
+          line-height: 24px;
+          color: $dark-1;
+          text-transform: uppercase;
+          .prodcut-sell-prize {
+            font-size: $font-xxs;
+            color: $primary-color;
+            text-decoration-line: line-through;
+          }
+        }
+      }
+    }
+  }
+}
+
+.add-area {
+  position: absolute;
+  width: 100%;
+  bottom: -55px;
+  opacity: 0;
+  transition: all ease-in-out 0.35s;
+}
+
+.main-card-area:hover .add-area {
+  display: block;
+  bottom: 0;
+  opacity: 1;
+}
+
+.product-counter {
+  background: $primary-color;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  display: flex;
+
+  .product-show-icon {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 20px;
+    img {
+      width: 18px;
+    }
+  }
+  .product-number {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    text-align: center;
+    .product-minus,
+    .product-plus {
+      color: $white;
+      font-size: $font-md;
+      font-weight: $font-semi-medium;
+      line-height: 22px;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    input {
+      width: 75px;
+      text-align: center;
+      font-size: 36px;
+      display: inline-block;
+      vertical-align: middle;
+      border: 0;
+      background: $primary-color;
+      font-weight: $font-medium;
+      color: $white;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  .add-product-modal {
+    border-right: 1px solid $white;
+  }
+  .add-to-favorite {
+    border-left: 1px solid $white;
+  }
+}
+
+.product-counter {
+  visibility: hidden;
+  z-index: 2;
+}

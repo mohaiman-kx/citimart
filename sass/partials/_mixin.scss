@@ -1,0 +1,111 @@
+//font mixin 1
+
+@mixin title-1($display) {
+  font-size: $font-md;
+  color: $primary-color;
+  font-weight: $font-medium;
+  border-radius: 10px;
+  box-shadow: 4px 4px 40px 0px #0000001a;
+  display: $display;
+}
+
+@mixin title-2($color) {
+  font-size: $font-md;
+  color: $color;
+  line-height: 36px;
+  text-align: center;
+  font-weight: $font-semi-medium;
+  text-transform: uppercase;
+}
+
+@mixin product-category-title($color, $margin-bottom) {
+  color: $color;
+  font-size: $font-mlg;
+  font-weight: $font-medium;
+  line-height: 48px;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin product-main-title(
+  $color,
+  $fontSize,
+  $marginBottom,
+  $fontWeight,
+  $lineHeight
+) {
+  color: $color;
+  font-size: $fontSize;
+  margin-bottom: $marginBottom;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin product-price($color, $fontSize, $fontWeight, $lineHeight) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin product-currency-title($color, $fontSize, $fontWeight, $lineHeight) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin product-disc($color, $fontSize, $lineHeight) {
+  color: $color;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin buynow-btn(
+  $bgColor,
+  $fontSize,
+  $padding,
+  $radius,
+  $lineHeight,
+  $fontWeight
+) {
+  background: $bgColor;
+  font-size: $fontSize;
+  padding: $padding;
+  border-radius: $radius;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  border: 0;
+  color: $white;
+}
+
+@mixin minicartNumber($color, $fontSize, $fontWeight, $lineHeight) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin minicartText($color, $fontSize, $fontWeight, $lineHeight) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin btnOutline(
+  $backGround,
+  $color,
+  $border,
+  $fontSize,
+  $textAlign,
+  $lh,
+  $br
+) {
+  background: $backGround;
+  color: $color;
+  border: $border;
+  font-size: $fontSize;
+  text-align: $textAlign;
+  line-height: $lh;
+  border-radius: $br;
+}

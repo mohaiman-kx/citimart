@@ -1,0 +1,93 @@
+.btn-search {
+  background: $primary-color;
+  padding: 11px 15px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.btn-search-category {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background: $gray-2;
+  font-size: $font-sm;
+  line-height: 21px;
+  color: $text-color-1;
+  padding: 15px 47px 15px 15px;
+}
+
+.btn-popup-modal-add-to-favorite-list {
+  color: $primary-color;
+  font-size: $font-smm;
+  font-weight: $font-semi-medium;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.button-close-xs {
+  @include btnOutline(
+    transparent,
+    $primary-color,
+    1.5px solid $primary-color,
+    $font-xs,
+    center,
+    21px,
+    5px
+  );
+}
+
+.c-footer-button-primary {
+  color: $white;
+  text-decoration: none;
+  font-size: $font-md;
+}
+
+.c-footer-button-amount {
+  color: $primary-color;
+  text-decoration: none;
+  font-size: $font-md;
+  span {
+    font-size: $font-sm;
+    color: $gray-7;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-weight: $font-semi-medium;
+  }
+}
+
+@mixin loginSignUp(
+  $bg,
+  $border,
+  $br,
+  $fontSize,
+  $fontWeight,
+  $color,
+  $lineHeight,
+  $padding
+) {
+  background: $bg;
+  border: $border;
+  border-radius: $br;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+  line-height: $lineHeight;
+  padding: $padding;
+  text-transform: capitalize;
+}
+
+.btn-main-outline {
+  @include loginSignUp(
+    transparent,
+    1.5px solid $primary-color,
+    10px,
+    $font-md,
+    $font-semi-medium,
+    $primary-color,
+    20px,
+    15px 20px
+  );
+}

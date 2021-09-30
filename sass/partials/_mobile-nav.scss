@@ -1,0 +1,19 @@
+.mobile-nav-header-top {
+  display: none;
+  @include media("<=991px") {
+    display: block;
+    padding: 20px 0px 5px 0px;
+    background: $primary-color;
+    .mnht-right ul {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+      li {
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

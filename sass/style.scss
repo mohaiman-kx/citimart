@@ -1,0 +1,35 @@
+/*
+Theme Name: Citimart
+Theme URI: Citimart
+Author : BYSL Global Technology Group
+Version: 1.0
+*/
+
+
+@import "responsive/breakpoints";
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/mixin-footer";
+@import "partials/helper";
+@import "partials/body";
+@import "partials/container";
+@import "partials/topbar-area";
+@import "partials/top-navbar-area";
+@import "partials/main-nav-area";
+@import "partials/category-nav-area";
+@import "partials/slider";
+@import "partials/needs";
+@import "partials/category-area";
+@import "partials/product-category";
+@import "partials/popular-search";
+@import "partials/homepage-modal";
+@import "partials/product-modal";
+@import "partials/mobile-bottom-nav";
+@import "partials/buttons";
+@import "partials/popup-modal";
+@import "partials/mobile-nav";
+@import "partials/mobile-slide-menu";
+@import "partials/footer";
+@import "partials/animation";
+/*user.scss alwasys in last*/
+@import "partials/user";

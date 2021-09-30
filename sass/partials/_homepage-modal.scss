@@ -1,0 +1,108 @@
+#homePageModal {
+  .modal-dialog {
+    max-width: 550px;
+    @include media("<=tablet") {
+      max-width: 100%;
+    }
+  }
+  .modal-content {
+    border: 0;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    .modal-body {
+      .logo-area {
+        margin-bottom: 70px;
+      }
+      .form-area {
+        input {
+          background: $light-grey-1;
+          border: 0;
+          border-radius: 10px;
+          padding: 18px 0px 18px 30px;
+          width: 350px;
+          @include media("<=tablet") {
+            width: 100%;
+          }
+        }
+        .homapage-modal-custom-select {
+          width: 350px;
+          position: relative;
+          margin: auto;
+          margin-top: 35px;
+          select {
+            display: none;
+          }
+          @include media("<=tablet") {
+            width: 100%;
+          }
+        }
+      }
+      .home-modal-button-area {
+        margin-top: 125px;
+        text-align: center;
+        button {
+          border: 0;
+          background: $primary-color;
+          text-transform: uppercase;
+          font-size: $font-md;
+          font-weight: $font-medium;
+          color: $white;
+          padding: 16px 44px;
+          cursor: pointer;
+          max-width: 180px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+.select-selected {
+  background: $light-grey-1;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  right: 28px;
+  border: solid $grey-6;
+  border-width: 0 0.156rem 0.156rem 0;
+  display: inline-block;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.select-items div,
+.select-selected {
+  color: $dark-1;
+  border-radius: 10px;
+  padding: 18px 30px 18px 30px;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items {
+  position: absolute;
+  background: $light-grey-1;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-radius: 0;
+}

@@ -1,0 +1,32 @@
+@mixin footer-bg($f-bg-color, $f-bg-url) {
+  background-color: $f-bg-color;
+  background-image: $f-bg-url;
+  width: 100%;
+  color: $white;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+@mixin footer-credit($footer-credit-font) {
+  font-family: $footer-credit-font;
+  font-size: $font-sm;
+  line-height: 24px;
+  text-align: left;
+  color: $white;
+}
+
+@mixin footer-menu-title() {
+  font-weight: $font-medium;
+  font-size: $font-smd;
+  color: $white;
+  line-height: 30px;
+}
+
+@mixin location-context($font-size, $font-weight, $line-height, $color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color;
+}

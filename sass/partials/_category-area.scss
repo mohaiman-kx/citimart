@@ -1,0 +1,30 @@
+.category-area {
+  text-align: center;
+  font-size: $font-sm;
+  font-weight: $font-medium;
+  .category-area__items {
+    a {
+      text-decoration: none;
+    }
+    .__item-title p {
+      color: $dark-3;
+      display: block;
+      margin-top: 1.25rem;
+    }
+  }
+}
+
+@include media("<=991px") {
+  .category-area {
+    font-size: $font-xxxs;
+    .category-area__items {
+      .__item-title p {
+        margin-top: 5px;
+        font-weight: normal;
+      }
+    }
+    .category-area__items__item {
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.topbar-area {
+  font-size: $font-xs;
+  background: $gray-1;
+  color: $dark-2;
+  line-height: 21px;
+  padding: 9px 0px;
+  .quick-menu-area {
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        margin-right: 50px;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 20px;
+          background: $dark-2;
+          right: -25px;
+        }
+        &:last-child:after {
+          display: none;
+        }
+        a {
+          color: $dark-2;
+          text-decoration: none;
+          font-weight: $font-normal;
+          img {
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  .login-area {
+    a {
+      color: $dark-2;
+      text-decoration: none;
+      font-weight: $font-normal;
+      img {
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    display: none;
+  }
+}
