@@ -3,8 +3,32 @@
     padding-top: 100px;
   }
   .product-category-title {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     p {
-      @include product-category-title($grey-3, 50px);
+      @include product-category-title($grey-3, 0);
+      @include media("<1024px") {
+        @include normalText(#b7b6b6, 24px, 500, 36px, center);
+      }
+    }
+    /*
+    .product-category-title-btn {
+      color: $light;
+      background-color: $primary-color;
+      text-decoration: none;
+      padding: 2px 10px;
+      border-radius: 10px;
+      box-shadow: 4px 4px 40px 0px #0000001a;
+    }
+    */
+    .product-category-title-btn {
+      color: $primary-color;
+      text-decoration: none;
+    }
+    @include media("<1024px") {
+      flex-direction: column;
     }
   }
   .product-showcase-area {

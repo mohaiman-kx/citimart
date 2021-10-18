@@ -1,6 +1,11 @@
 .main-nav-area {
   background: $primary-color;
   padding: 12px 0;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 132px;
+  transition: top 0.3s;
   .dropdown-menu-title {
     p {
       span {

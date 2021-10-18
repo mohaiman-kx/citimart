@@ -1,3 +1,9 @@
+.hero-slider-area {
+  margin-top: 180px;
+  @include media("<=991px") {
+    margin-top: 0;
+  }
+}
 .home-slider-area {
   .carousel-item-bg {
     width: 100%;

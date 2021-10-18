@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Citimart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="dist/css/slick.css" />
+    <link rel="stylesheet" href="dist/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="dist/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="dist/css/simplebar.css" />
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+  </head>
+  <body>
+    <!-- topbar area start -->
+    <section class="topbar-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-10">
+            <div class="quick-menu-area">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img src="dist/images/icons/faq.svg" alt="" />FAQ’s</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="dist/images/icons/bell.svg" alt="" />Track
+                    Order</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="dist/images/icons/location.svg"
+                      alt=""
+                    />Locator</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2">
+            <div class="login-area">
+              <a
+                role="button"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                <img src="dist/images/icons/user.svg" alt="" />
+                Login and Register
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- topbar area End -->
+    <!-- mobile nav start -->
+    <div class="mobile-nav-header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="mnht-line">
+              <a id="mobileSlideMenu" role="button">
+                <img src="dist/images/icons/mobile-nav/line-m.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-4 offset-2">
+            <div class="mnht-logo">
+              <img
+                src="dist/images/icons/mobile-nav/citimart-logo-m.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mnht-right">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img
+                      src="dist/images/icons/mobile-nav/search-m.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="dist/images/icons/mobile-nav/bag-m.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile nav end -->
+    <!-- top navbar area start -->
+    <div class="top-navbar-area" id="top-navbar-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-3">
+            <div class="top-navbar-area__logo">
+              <img src="dist/images/logo/citimart.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="top-navbar-area__search-area">
+              <div class="input-group">
+                <div class="input-group-btn search-panel">
+                  <button
+                    type="button"
+                    class="btn btn-default btn-search-category dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                    <span id="search_concept">All Categories</span>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu scrollable-dropdown" role="menu">
+                    <li><a href="#">Automotive Accesories</a></li>
+                    <li><a href="#">Cell Phone Accesories</a></li>
+                    <li><a href="#">Computer Accesories</a></li>
+                    <li><a href="#">Health and Personal Care</a></li>
+                    <li><a href="#">Automotive Accesories</a></li>
+                    <li><a href="#">Cell Phone Accesories</a></li>
+                    <li><a href="#">Computer Accesories</a></li>
+                    <li><a href="#">Health and Personal Care</a></li>
+                    <li><a href="#">Automotive Accesories</a></li>
+                    <li><a href="#">Cell Phone Accesories</a></li>
+                    <li><a href="#">Computer Accesories</a></li>
+                    <li><a href="#">Health and Personal Care</a></li>
+                    <li><a href="#">Automotive Accesories</a></li>
+                    <li><a href="#">Cell Phone Accesories</a></li>
+                    <li><a href="#">Computer Accesories</a></li>
+                    <li><a href="#">Health and Personal Care</a></li>
+                  </ul>
+                </div>
+                <input
+                  type="hidden"
+                  name="search_param"
+                  value="all"
+                  id="search_param"
+                />
+                <input
+                  type="text"
+                  class="form-control search-form-control"
+                  name="x"
+                  id="search"
+                  placeholder="I’m Looking for..."
+                />
+                <span class="input-group-btn">
+                  <button class="btn btn-default btn-search" type="button">
+                    <img src="dist/images/icons/search.svg" alt="" />
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="top-navbar-area__cart-fav-btn">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img src="dist/images/icons/heart-lg.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a role="button" id="bagCartShow"
+                    ><img src="dist/images/icons/bag.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <div class="mini-cart wobble-hor-top sshake-top d-none">
+                <div class="mini-cart__total-items">
+                  <p>3</p>
+                  <p>items</p>
+                </div>
+                <div class="mini-cart__total-amount">
+                  <p><span>BDT</span>323</p>
+                </div>
+              </div>
+              <div class="mini-large-cart">
+                <div class="mini-large-cart__c-header">
+                  <div class="c-header-title">
+                    <p>3 item</p>
+                  </div>
+                  <div class="c-header-close">
+                    <button class="button-close-xs">Close</button>
+                  </div>
+                </div>
+                <div class="c-bar">
+                  <p>Selected Item</p>
+                </div>
+                <div data-simplebar class="mini-large-cart-area">
+                  <div class="mini-large-cart-content">
+                    <div class="mini-large-cart-content-box">
+                      <div class="minicart-close">
+                        <button>
+                          <img src="dist/images/icons/close-cart.svg" alt="" />
+                        </button>
+                      </div>
+                      <div class="mini-large-cart-content-box__image-area">
+                        <img src="dist/images/cart/product1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="mini-large-cart-content-box">
+                      <div class="mini-large-cart-content-box__product-dis">
+                        <div>Tee-shirt ZEUS Réflective – Blanc</div>
+                        <div>Color Orange, Size XL</div>
+                      </div>
+                    </div>
+                    <div class="mini-large-cart-content-box">
+                      <div class="mini-large-cart-count-price">
+                        <div class="cart-product-number">
+                          <div class="input-group">
+                            <span class="input-group-prepend">
+                              <button
+                                type="button"
+                                class="cart-product-minus pm-btn-number"
+                                disabled="disabled"
+                                data-type="minus"
+                                data-field="quant[1]"
+                              >
+                                -
+                              </button>
+                            </span>
+                            <span class="cart-product-number">
+                              <input
+                                type="text"
+                                name="quant[1]"
+                                class="form-control input-number"
+                                value="1"
+                                min="1"
+                                max="1000"
+                              />
+                            </span>
+
+                            <span class="input-group-append">
+                              <button
+                                type="button"
+                                class="cart-product-plus pm-btn-number"
+                                data-type="plus"
+                                data-field="quant[1]"
+                              >
+                                +
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="cart-prodcut-price">
+                          <p>Total</p>
+                          <p><span>BDT</span>423</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mini-large-cart-content">
+                    <div class="mini-large-cart-content-box">
+                      <div class="minicart-close">
+                        <button>
+                          <img src="dist/images/icons/close-cart.svg" alt="" />
+                        </button>
+                      </div>
+                      <div class="mini-large-cart-content-box__image-area">
+                        <img src="dist/images/cart/product1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="mini-large-cart-content-box">
+                      <div class="mini-large-cart-content-box__product-dis">
+                        <div>Tee-shirt ZEUS Réflective – Blanc</div>
+                        <div>Color Orange, Size XL</div>
+                      </div>
+                    </div>
+                    <div class="mini-large-cart-content-box">
+                      <div class="mini-large-cart-count-price">
+                        <div class="cart-product-number">
+                          <div class="input-group">
+                            <span class="input-group-prepend">
+                              <button
+                                type="button"
+                                class="cart-product-minus pm-btn-number"
+                                disabled="disabled"
+                                data-type="minus"
+                                data-field="quant[1]"
+                              >
+                                -
+                              </button>
+                            </span>
+                            <span class="cart-product-number">
+                              <input
+                                type="text"
+                                name="quant[1]"
+                                class="form-control input-number"
+                                value="1"
+                                min="1"
+                                max="1000"
+                              />
+                            </span>
+
+                            <span class="input-group-append">
+                              <button
+                                type="button"
+                                class="cart-product-plus pm-btn-number"
+                                data-type="plus"
+                                data-field="quant[1]"
+                              >
+                                +
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="cart-prodcut-price">
+                          <p>Total</p>
+                          <p><span>BDT</span>423</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mini-large-cart-content">
+                    <div class="mini-large-cart-content-box">
+                      <div class="minicart-close">
+                        <button>
+                          <img src="dist/images/icons/close-cart.svg" alt="" />
+                        </button>
+                      </div>
+                      <div class="mini-large-cart-content-box__image-area">
+                        <img src="dist/images/cart/product1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="mini-large-cart-content-box">
+                      <div class="mini-large-cart-content-box__product-dis">
+                        <div>Tee-shirt ZEUS Réflective – Blanc</div>
+                        <div>Color Orange, Size XL</div>
+                      </div>
+                    </div>
+                    <div class="mini-large-cart-content-box">
+                      <div class="mini-large-cart-count-price">
+                        <div class="cart-product-number">
+                          <div class="input-group">
+                            <span class="input-group-prepend">
+                              <button
+                                type="button"
+                                class="cart-product-minus pm-btn-number"
+                                disabled="disabled"
+                                data-type="minus"
+                                data-field="quant[1]"
+                              >
+                                -
+                              </button>
+                            </span>
+                            <span class="cart-product-number">
+                              <input
+                                type="text"
+                                name="quant[1]"
+                                class="form-control input-number"
+                                value="1"
+                                min="1"
+                                max="1000"
+                              />
+                            </span>
+
+                            <span class="input-group-append">
+                              <button
+                                type="button"
+                                class="cart-product-plus pm-btn-number"
+                                data-type="plus"
+                                data-field="quant[1]"
+                              >
+                                +
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="cart-prodcut-price">
+                          <p>Total</p>
+                          <p><span>BDT</span>423</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mini-large-cart-content">
+                    <div class="mini-large-cart-content-box">
+                      <div class="minicart-close">
+                        <button>
+                          <img src="dist/images/icons/close-cart.svg" alt="" />
+                        </button>
+                      </div>
+                      <div class="mini-large-cart-content-box__image-area">
+                        <img src="dist/images/cart/product1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="mini-large-cart-content-box">
+                      <div class="mini-large-cart-content-box__product-dis">
+                        <div>Tee-shirt ZEUS Réflective – Blanc</div>
+                        <div>Color Orange, Size XL</div>
+                      </div>
+                    </div>
+                    <div class="mini-large-cart-content-box">
+                      <div class="mini-large-cart-count-price">
+                        <div class="cart-product-number">
+                          <div class="input-group">
+                            <span class="input-group-prepend">
+                              <button
+                                type="button"
+                                class="cart-product-minus pm-btn-number"
+                                disabled="disabled"
+                                data-type="minus"
+                                data-field="quant[1]"
+                              >
+                                -
+                              </button>
+                            </span>
+                            <span class="cart-product-number">
+                              <input
+                                type="text"
+                                name="quant[1]"
+                                class="form-control input-number"
+                                value="1"
+                                min="1"
+                                max="1000"
+                              />
+                            </span>
+
+                            <span class="input-group-append">
+                              <button
+                                type="button"
+                                class="cart-product-plus pm-btn-number"
+                                data-type="plus"
+                                data-field="quant[1]"
+                              >
+                                +
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="cart-prodcut-price">
+                          <p>Total</p>
+                          <p><span>BDT</span>423</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-footer">
+                  <div class="c-footer-button">
+                    <a href="" class="c-footer-button-primary">Place Order</a>
+                  </div>
+                  <div class="c-footer-button c-footer-amount">
+                    <a href="" class="c-footer-button-amount"
+                      ><span>BDT</span>423</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top navbar area end -->
+
+    <!-- megamnav area start -->
+    <div class="main-nav-area" id="main-nav-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2">
+            <div class="dropdown-menu-title">
+              <p>
+                <span
+                  ><img src="dist/images/icons/department.svg" alt="" /></span
+                >all departments
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-7">
+            <div class="nav-menu">
+              <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">products</a></li>
+                <li><a href="">daily need</a></li>
+                <li><a href="">offers</a></li>
+                <li><a href="">members</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="hotline-area">
+              <a>
+                <span><img src="dist/images/icons/phone.svg" alt="" /></span
+                >hotline: (+880)123456790
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- meganav area end -->
+
+    <!-- my account area start -->
+    <section class="user-account-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="shop-page-title">
+              <p>User Profile</p>
+            </div>
+            <div class="my-account-menu-area">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img src="dist/images/icons/my-account.svg" alt="" />My
+                    Account</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="dist/images/icons/my-account.svg"
+                      alt=""
+                    />Delivery Address</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="dist/images/icons/my-account.svg"
+                      alt=""
+                    />Favorites</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="dist/images/icons/my-account.svg" alt="" />My
+                    Last Orders</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="my-account-logout-area">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img src="dist/images/icons/logout.svg" alt="" />Log out</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-9">
+            <div class="shop-page-title shop-page-my-account-title">
+              <p>My Account</p>
+            </div>
+            <div class="user-context-area">
+              <div class="user-profile-area text-center">
+                <img src="dist/images/icons/user-color.svg" alt="" />
+                <p>Name</p>
+              </div>
+              <div class="user-form-area">
+                <form class="row">
+                  <div class="col-md-6">
+                    <div class="user-form">
+                      <label for="" class="">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id=""
+                        placeholder="Your Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="user-form">
+                      <label for="" class="">Old Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id=""
+                        placeholder="*****************"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="user-form">
+                      <label for="" class="">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id=""
+                        placeholder="Your email address"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="user-form">
+                      <label for="" class="">New Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id=""
+                        placeholder="***************"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="user-submit-btn">
+                      Save Changes
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- my account area end -->
+
+    <script
+      src="https://kit.fontawesome.com/0a6ae9f4cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dist/js/jquery.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="dist/js/slick.js"></script>
+    <script src="dist/js/owl.carousel.min.js"></script>
+    <script src="dist/js/simplebar.min.js"></script>
+    <script src="dist/js/jquery.sticky.js"></script>
+    <script src="dist/js/custom-select.js"></script>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>

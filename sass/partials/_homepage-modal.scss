@@ -4,6 +4,9 @@
     @include media("<=tablet") {
       max-width: 100%;
     }
+    @include media(">=320px", "<768px") {
+      margin: 40px;
+    }
   }
   .modal-content {
     border: 0;
@@ -41,6 +44,9 @@
       .home-modal-button-area {
         margin-top: 125px;
         text-align: center;
+        @include media(">=320px", "<768px") {
+          margin-top: 58px;
+        }
         button {
           border: 0;
           background: $primary-color;
@@ -52,6 +58,10 @@
           cursor: pointer;
           max-width: 180px;
           border-radius: 10px;
+          @include media(">=320px", "<768px") {
+            @include normalText($white, 18px, 500, 21px, center);
+            letter-spacing: 10%;
+          }
         }
       }
     }

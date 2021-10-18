@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Citimart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
@@ -75,7 +76,7 @@
           <div class="col-4">
             <div class="mnht-right">
               <ul>
-                <li><a href=""><img src="dist/images/icons/mobile-nav/search-m.svg" alt=""></a></li>
+                <li><a role='button' id='mobileSearchOpen'><img src="dist/images/icons/mobile-nav/search-m.svg" alt=""></a></li>
                 <li><a href=""><img src="dist/images/icons/mobile-nav/bag-m.svg" alt=""></a></li>
               </ul>
             </div>
@@ -397,7 +398,7 @@
     <section class="hero-slider-area">
       <div class="container">
         <div class="row ">
-          <div class="col-sm-12 col-xl-2" >
+          <div class="col-sm-12 col-xl-2" style="padding-right: 0;">
             <div class="category-nav-area">
               <ul>
                 <li>
@@ -520,7 +521,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-12 col-xl-10 home-slider-area-no-padding">
+          <div class="col-sm-12 col-xl-10 home-slider-area-no-padding" style="padding-left: 0;">
             <div class="home-slider-area">
               <div
                 id="carouselExampleCaptions"
@@ -703,6 +704,7 @@
           <div class="col-xl-12">
             <div class="product-category-title">
               <p>Top Selling Items</p>
+              <a href="" role="button" class="product-category-title-btn">See all</a>
             </div>
           </div>
         </div>
@@ -1108,6 +1110,7 @@
           <div class="col-xl-12">
             <div class="product-category-title">
               <p>Baby Products</p>
+              <a href="" role="button" class="product-category-title-btn">See all</a>
             </div>
           </div>
         </div>
@@ -1512,6 +1515,7 @@
           <div class="col-xl-12">
             <div class="product-category-title">
               <p>Food & Bevarage</p>
+              <a href="" role="button" class="product-category-title-btn">See all</a>
             </div>
           </div>
         </div>
@@ -1982,32 +1986,37 @@
             </div>
           </div>
           <div class="col-6 col-md-6 col-lg-2 col-xl-2">
-            <div class="footer-sub-menu-title">
-              <p>Cmart.global</p>
-            </div>
-            <div class="footer-sub-menu">
-              <ul>
-                <li><a href="">About Citimart</a></li>
-                <li><a href="">Sitemap</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">Intellectual Property</a></li>
-              </ul>
+            <div class="footer-sub-meenu-title-parent">
+              <div class="footer-sub-menu-title">
+                <p>Cmart.global</p>
+              </div>
+              <div class="footer-sub-menu">
+                <ul>
+                  <li><a href="">About Citimart</a></li>
+                  <li><a href="">Sitemap</a></li>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Intellectual Property</a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-6 col-lg-2 col-xl-2">
-            <div class="footer-sub-menu-title">
-              <p>Resources</p>
+            <div class="footer-sub-meenu-title-parent">
+              <div class="footer-sub-menu-title">
+                <p>Resources</p>
+              </div>
+              <div class="footer-sub-menu">
+                <ul>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Return Policy</a></li>
+                  <li><a href="">Referrals</a></li>
+                  <li><a href="">Terms and Conditions</a></li>
+                  <li><a href="">Customer Feedback</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="footer-sub-menu">
-              <ul>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Return Policy</a></li>
-                <li><a href="">Referrals</a></li>
-                <li><a href="">Terms and Conditions</a></li>
-                <li><a href="">Customer Feedback</a></li>
-              </ul>
-            </div>
+      
           </div>
           <div class="col-12 col-md-12 col-lg-4 col-xl-3 offset-xl-1">
             <a href="">
@@ -2127,7 +2136,74 @@
             <div class="modal-body">
              <div class="container-fulid">
                <div class="row">
-                 <div class="col-xl-6">hello</div>
+                 <div class="col-xl-6">
+                  <div class="outer">
+                    <div id="big" class="owl-carousel owl-theme">
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                        <div class="item">
+                          <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                    </div>
+                    <div id="thumbs" class="owl-carousel owl-theme">
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                      <div class="item">
+                        <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                        <div class="item">
+                          <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                        <div class="item">
+                          <img src="dist/images/products/product-image.png" alt="">
+                      </div>
+                    </div>
+                    </div>
+                 </div>
                  <div class="col-xl-5 offset-xl-1">
                    <div class="product-infomation">
                      <h1>Product Name</h1>
@@ -2348,10 +2424,94 @@
 
     <!-- mobile slide menu  -->
     <section class="mobile-slide-menu">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis unde cum minus excepturi corrupti voluptates reiciendis officia ex, veritatis fugiat vero voluptatem exercitationem, velit soluta cupiditate ea. Animi, et doloremque?
-        <a role='button' id='mobile-slide-menu-area-close'>Close</a>
+      <div class="close-area">
+        <a role='button' id='mobile-slide-menu-area-close' class="mobile-close"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="mobile-slider-logo-area text-center">
+        <img src="dist/images/logo/citimart.svg" alt="">
+      </div>
+      <div class="small-search-area">
+        <div class="input-group">
+          <input type="hidden" name="search_param" value="all" id="search_param">
+          <input type="text" class="form-control search-form-control" name="x" id="search" placeholder="I’m Looking for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default btn-search" type="button">
+              <img src="dist/images/icons/search.svg" alt="">
+            </button>
+        </span>
+         </div>
+      </div>
+      <div class="small-mobile-menu">
+        <div class="small-mobile-menu__title">Categories</div>
+        <div class="small-mobile-menu__items">
+          <ul>
+            <li><a href="">Baby <span><i class="fas fa-chevron-right"></i></span></a></li>
+            <li><a href="">Food <span><i class="fas fa-chevron-right"></i></span></a></li>
+            <li><a href="">Beauty <span><i class="fas fa-chevron-right"></i></span></a></li>
+            <li><a href="">Household Essential<span><i class="fas fa-chevron-right"></i></span></a></li>
+            <li><a href="">Office Supplies <span><i class="fas fa-chevron-right"></i></span></a></li>
+            <li><a href="">Personal Care<span><i class="fas fa-chevron-right"></i></span></a></li>
+          </ul>
+        </div>
+        <div class="small-mobile-menu__items-2">
+          <ul class="text-center">
+            <li><a href="">Products</a></li>
+            <li><a href="">daily needs</a></li>
+            <li><a href="">members</a></li>
+            <li><a href="">track order</a></li>
+            <li><a href="">faq's</a></li>
+            <li><a href="">locator</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!-- mobile slide menu end -->
+
+    <!-- mobile search area -->
+    <section class="mobile-search-area">
+      <div class="close-area">
+        <a role='button' id='mobile-search-area-close' class="mobile-close"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="mobile-slider-logo-area text-center">
+        <img src="dist/images/logo/citimart.svg" alt="">
+      </div>
+      <div class="small-search-area">
+        <div class="input-group">
+          <input type="hidden" name="search_param" value="all" id="search_param">
+          <input type="text" class="form-control search-form-control" name="x" id="search" placeholder="I’m Looking for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default btn-search" type="button">
+              <img src="dist/images/icons/search.svg" alt="">
+            </button>
+        </span>
+         </div>
+      </div>
+      <div class="mobile-search-suggestion-area">
+        <div class="mobile-search-suggestion-area__title">
+          Search in:
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="mobile-search-suggestion-area__smallTTabs">
+                <ul>
+                  <li><a href="">All Categories</a></li>
+                  <li><a href="">Food</a></li>
+                  <li><a href="">Beauty Products</a></li>
+                  <li><a href="">Baby Food</a></li>
+                  <li><a href="">Stationary</a></li>
+                  <li><a href="">Stationary for Office</a></li>
+                  <li><a href="">Savlon</a></li>
+                  <li><a href="">Beverage</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+    <!-- mobile search area end -->
 
     <script src="dist/js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -2402,5 +2562,139 @@
         body.classList.remove('overflow-hidden');
       });
     </script>
+    <script>
+      const mobileSearchAreaOpen = document.getElementById('mobileSearchOpen');
+      const mobileSearchArea = document.querySelector('.mobile-search-area');
+      const mobileSearchAreaClose = document.getElementById('mobile-search-area-close');
+   
+      mobileSearchAreaOpen.addEventListener('click', ()=>{
+        console.log('working')
+        mobileSearchArea.classList.add('mobile-search-area-active'); 
+        body.classList.add('overflow-hidden');
+      });
+      mobileSearchAreaClose.addEventListener('click', ()=>{
+        mobileSearchArea.classList.remove('mobile-search-area-active');
+        body.classList.remove('overflow-hidden');
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        var bigimage = $("#big");
+        var thumbs = $("#thumbs");
+        //var totalslides = 10;
+        var syncedSecondary = true;
+
+        bigimage
+          .owlCarousel({
+          items: 1,
+          slideSpeed: 2000,
+          autoplay: true,
+          dots: false,
+          loop: true,
+          responsiveRefreshRate: 200,
+          navText: [
+            '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
+            '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
+          ]
+        })
+          .on("changed.owl.carousel", syncPosition);
+
+        thumbs
+          .on("initialized.owl.carousel", function() {
+          thumbs
+            .find(".owl-item")
+            .eq(0)
+            .addClass("current");
+        })
+          .owlCarousel({
+          items: 5,
+          nav: false,
+          dots: false,
+          navText: [
+            '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
+            '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
+          ],
+          smartSpeed: 200,
+          slideSpeed: 500,
+          slideBy: 5,
+          responsiveRefreshRate: 100
+        })
+          .on("changed.owl.carousel", syncPosition2);
+
+        function syncPosition(el) {
+          //if loop is set to false, then you have to uncomment the next line
+          //var current = el.item.index;
+
+          //to disable loop, comment this block
+          var count = el.item.count - 1;
+          var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+
+          if (current < 0) {
+            current = count;
+          }
+          if (current > count) {
+            current = 0;
+          }
+          //to this
+          thumbs
+            .find(".owl-item")
+            .removeClass("current")
+            .eq(current)
+            .addClass("current");
+          var onscreen = thumbs.find(".owl-item.active").length - 1;
+          var start = thumbs
+          .find(".owl-item.active")
+          .first()
+          .index();
+          var end = thumbs
+          .find(".owl-item.active")
+          .last()
+          .index();
+
+          if (current > end) {
+            thumbs.data("owl.carousel").to(current, 100, true);
+          }
+          if (current < start) {
+            thumbs.data("owl.carousel").to(current - onscreen, 100, true);
+          }
+        }
+
+        function syncPosition2(el) {
+          if (syncedSecondary) {
+            var number = el.item.index;
+            bigimage.data("owl.carousel").to(number, 100, true);
+          }
+        }
+
+        thumbs.on("click", ".owl-item", function(e) {
+          e.preventDefault();
+          var number = $(this).index();
+          bigimage.data("owl.carousel").to(number, 300, true);
+        });
+      });
+
+    </script>
+
+    <script>
+
+      //navbar scroll
+      window.onscroll = function() {citimartNavScroll()};
+
+      function citimartNavScroll() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        console.log('i am working');
+        document.querySelector(".topbar-area").style.top = "-60px";
+        document.getElementById("top-navbar-area").style.top = "0";
+        document.getElementById("main-nav-area").style.top = "93px";
+
+      } else if (document.body.scrollTop < 5 || document.documentElement.scrollTop < 5){
+        document.querySelector(".topbar-area").style.top ="0";
+        document.getElementById("top-navbar-area").style.top = "39px";
+        document.getElementById("main-nav-area").style.top = "132px";
+      }
+    }
+
+    </script>
+
   </body>
 </html>

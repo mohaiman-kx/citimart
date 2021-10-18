@@ -1,6 +1,11 @@
 .top-navbar-area {
   padding: 20px 0;
   background: $white;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 39px;
+  transition: top 0.3s;
   &__cart-fav-btn {
     position: relative;
     ul {
@@ -305,4 +310,21 @@
   top: -33px;
   position: absolute;
   right: 83px;
+}
+
+.scrollable-dropdown {
+  padding: 0;
+  border: 0;
+  box-shadow: 4px 4px 40px 0px #0000001a;
+  li {
+    padding: 10px 20px;
+    transition: all ease-in-out 0.3s;
+    &:hover {
+      background: $light-grey-5;
+    }
+    a {
+      text-decoration: none;
+      color: $text-color-1;
+    }
+  }
 }

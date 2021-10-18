@@ -4,6 +4,9 @@
   }
   .footer-padding {
     padding: 50px 0px;
+    @include media("<=tablet") {
+      padding: 50px 0px 20px 0px;
+    }
   }
   .footer-social-media-icons {
     ul {
@@ -43,6 +46,9 @@
           text-decoration: none;
           font-size: $font-sm;
           line-height: 24px;
+          // @include media(">=tablet") {
+          //   font-size: 14px;
+          // }
         }
       }
     }
@@ -83,6 +89,9 @@
           @include location-context($font-ssmd, $font-medium, 36px, $white);
         }
       }
+    }
+    @include media(">=320px", "<768px") {
+      margin: 28px 20px 0 20px;
     }
   }
   .contact-area {
@@ -185,5 +194,12 @@
     background-position: calc(100%) calc(100% - 60px);
     background-size: inherit;
     overflow: hidden;
+  }
+}
+
+.footer-sub-meenu-title-parent {
+  @include media("<=991px") {
+    margin-top: 35px;
+    margin-left: 20px;
   }
 }

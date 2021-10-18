@@ -1,0 +1,165 @@
+.add-delivery-address-area {
+  margin-top: 100px;
+  .add-delivery-addresss-area-button {
+    a {
+      @include solidButton(
+        $primary-color,
+        $light,
+        $font-smm,
+        $font-semi-medium,
+        27px,
+        center,
+        17px 140px,
+        5px
+      );
+      text-transform: capitalize;
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.add-delivery-address-deatails-area {
+  margin-top: 38px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+
+  justify-content: space-between;
+  padding: 17px 56px 15px 20px;
+  .add-address-context {
+    margin-left: 22px;
+    h2 {
+      @include normalText(#afafaf, 24px, 500, 32px, left);
+      margin-top: 5px;
+      margin-bottom: 21px;
+    }
+    p {
+      @include normalText(#dedede, 16px, 500, 18px, left);
+    }
+  }
+}
+
+.new-address-form {
+  border-radius: 10px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  padding: 30px 30px;
+  .new-form-title-cotext {
+    h2 {
+      @include normalText(#44444f, 30px, 500, 35px, left);
+      margin-bottom: 10px;
+    }
+    p {
+      @include normalText(#c0c0c0, 12px, 400, 18px, left);
+    }
+  }
+  .new-address-form-area {
+    margin-top: 63px;
+    form {
+      label {
+        @include normalText($dark-1, 14px, 500, 18px, left);
+        margin-bottom: 5px;
+      }
+      .form-control {
+        display: block;
+        width: 100%;
+        padding-top: 11px;
+        padding-bottom: 12px;
+        padding-left: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $dark-1;
+        background-color: #f7f7f7;
+        background-clip: padding-box;
+        border: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 10px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        &::placeholder {
+          color: #d7d7d7;
+        }
+      }
+    }
+  }
+  .new-address-btn-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    .nd-text-btn {
+      display: block;
+      text-decoration: none;
+      @include normalText($primary-color, 16px, 500, 24px, left);
+    }
+    .nd-solid-btn {
+      display: block;
+      text-decoration: none;
+      @include solidButton(
+        $primary-color,
+        $light,
+        20px,
+        500,
+        30px,
+        center,
+        2px 24px 3px 26px,
+        5px
+      );
+    }
+  }
+}
+
+.new-form-block {
+  margin-bottom: 25px;
+}
+
+.new-form-block-80 {
+  margin-top: 80px;
+}
+
+.savemyaddressContext {
+  @include normalText($dark-1, 14px, 500, 18px, left);
+  margin-top: -20px !important;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.custom-form-check-radio {
+  .form-check-input:checked {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.custom-form-check-radio .form-check-label {
+  @include normalText(
+    #ababab !important,
+    14px !important,
+    500 !important,
+    18px !important,
+    left !important
+  );
+  margin-bottom: 0 !important;
+}
+
+.custom-form-check-radio.form-check {
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+.notifi-label {
+  @include normalText(
+    #c0c0c0 !important,
+    12px !important,
+    400 !important,
+    10px !important,
+    left !important
+  );
+  margin-top: 30px !important;
+}
+
+.notifi-label-checkmark {
+  top: -4px;
+}

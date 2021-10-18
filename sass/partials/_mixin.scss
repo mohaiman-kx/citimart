@@ -109,3 +109,82 @@
   line-height: $lh;
   border-radius: $br;
 }
+
+@mixin shoppingPageTitle(
+  $color,
+  $fontSize,
+  $fontWeight,
+  $lineHeight,
+  $textAlign
+) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+}
+
+@mixin normalText($color, $fontSize, $fontWeight, $lineHeight, $textAlign) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+}
+
+@mixin solidButton(
+  $bg,
+  $color,
+  $fontSize,
+  $fontWeight,
+  $lineHeight,
+  $textAlign,
+  $padding,
+  $borderRadius
+) {
+  background: $bg;
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  padding: $padding;
+  border-radius: $borderRadius;
+}
+
+@mixin orderStatusPill($bg) {
+  background: $bg;
+  width: 100px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $light;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  padding: 3px 8px;
+}
+
+@mixin orderActionBtn(
+  $bg,
+  $color,
+  $fontSize,
+  $fontWeight,
+  $lh,
+  $border,
+  $br,
+  $padding
+) {
+  background: $bg;
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lh;
+  border: $border;
+  border-radius: $br;
+  padding: $padding;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  min-width: 150px;
+  text-align: center;
+}

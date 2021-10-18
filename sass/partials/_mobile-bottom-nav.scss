@@ -1,5 +1,6 @@
 .mobile-nav {
   display: none;
+  z-index: 99;
 }
 
 @include media("<=991px") {

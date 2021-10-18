@@ -1,0 +1,138 @@
+.user-account-area {
+  padding-top: 60px;
+  position: relative;
+  .shop-page-title {
+    p {
+      @include shoppingPageTitle(
+        $text-color-2,
+        $font-mlg,
+        $font-medium,
+        48px,
+        left
+      );
+    }
+  }
+  .shop-page-my-account-title {
+    p {
+      @include shoppingPageTitle(
+        $primary-color,
+        30px,
+        $font-semi-medium,
+        35px,
+        left
+      );
+    }
+  }
+}
+
+.user-context-area {
+  .user-profile-area {
+    margin-bottom: 80px;
+    p {
+      @include normalText($dark-1, 24px, 500, 20px, center);
+      margin-top: 15px;
+    }
+  }
+}
+
+.user-form-area {
+  form {
+    .user-form {
+      width: 350px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    label {
+      @include normalText($dark-1, 20px, 500, 30px, left);
+      margin-bottom: 12px;
+    }
+    .form-control {
+      display: block;
+      width: 100%;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      padding-left: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $dark-1;
+      background-color: #f7f7f7;
+      background-clip: padding-box;
+      border: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 10px;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .user-submit-btn {
+      background: $primary-color-2;
+      border-radius: 5px;
+      border: 0;
+      width: 280px;
+      padding: 15px 0;
+      margin-top: 85px;
+      @include normalText($light, 20px, 500, 30px, center);
+    }
+  }
+}
+
+.my-account-menu-area {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100vh;
+    background: #f4f4f4;
+    right: 30px;
+    top: -158px;
+  }
+  ul {
+    margin-top: 50px;
+    li {
+      a {
+        @include normalText(#000000, 20px, normal, 20px, left);
+        text-transform: capitalize;
+        text-decoration: none;
+        padding: 30px 0px 30px 40px;
+        display: block;
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 3px;
+          height: 50px;
+          background: red;
+          top: 19%;
+          right: 30px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+        img {
+          margin-right: 26px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.my-account-logout-area {
+  margin-top: 210px;
+  ul {
+    li {
+      a {
+        @include normalText($primary-color, 20px, normal, 20px, left);
+        text-decoration: none;
+        padding: 30px 0px 30px 40px;
+        display: block;
+        position: relative;
+        img {
+          margin-right: 26px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
