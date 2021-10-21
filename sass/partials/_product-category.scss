@@ -70,6 +70,9 @@
             img {
               width: 18px;
             }
+            @include media("<=1023.99px") {
+              padding: 11px;
+            }
           }
           .add-card-button {
             display: block;
@@ -88,6 +91,10 @@
               border: 0;
               background: $light-grey-2;
               padding: 17px 0px;
+              @include media("<=1023.99px") {
+                font-size: 12px;
+                padding: 11px 0px;
+              }
             }
           }
           .add-product-modal {
@@ -130,6 +137,10 @@
   bottom: -55px;
   opacity: 0;
   transition: all ease-in-out 0.35s;
+  @include media("<=1023.99px") {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 .main-card-area:hover .add-area {
@@ -157,6 +168,9 @@
     padding: 20px;
     img {
       width: 18px;
+    }
+    @include media("<=tablet") {
+      padding: 11px;
     }
   }
   .product-number {
@@ -188,6 +202,10 @@
       color: $white;
       outline: none;
       cursor: pointer;
+      @include media("<=tablet") {
+        font-size: 24px;
+        width: 40px;
+      }
     }
   }
   .add-product-modal {

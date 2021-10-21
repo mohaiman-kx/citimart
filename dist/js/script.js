@@ -141,8 +141,10 @@ $(document).ready(function() {
 
 
 
+  // 
+  
   $(document).ready(function() {
-    var el = $('.product-owl');
+    var le = $('.product-owl');
     
     var carousel;
     var carouselOptions = {
@@ -153,13 +155,13 @@ $(document).ready(function() {
       responsive: {
         0: {
           items: 2,
-          rows: 2,
-          margin:34 //custom option not used by Owl Carousel, but used by the algorithm below
+          margin:34,
+          rows:2 //custom option not used by Owl Carousel, but used by the algorithm below
         },
         768: {
           items: 2,
-          rows: 2,
-          margin:34  //custom option not used by Owl Carousel, but used by the algorithm below
+          margin:34,
+          rows: 2  //custom option not used by Owl Carousel, but used by the algorithm below
         },
         991: {
           items: 5,
@@ -197,7 +199,7 @@ $(document).ready(function() {
       orderedBreakpoints.sort(function (a, b) {
         return b - a;
       });
-      var slides = el.find('[data-slide-index]');
+      var slides = le.find('[data-slide-index]');
       var slidesNb = slides.length;
       if (slidesNb > 0) {
         var rowsNb;
@@ -229,8 +231,8 @@ $(document).ready(function() {
               //Destroy existing carousel if any, and set html markup back to its initial state
               carousel.trigger('destroy.owl.carousel');
               carousel = undefined;
-              slides = el.find('[data-slide-index]').detach().appendTo(el);
-              el.find('.fake-col-wrapper').remove();
+              slides = le.find('[data-slide-index]').detach().appendTo(le);
+              le.find('.fake-col-wrapper').remove();
               reInit = true;
             }
   
@@ -246,7 +248,7 @@ $(document).ready(function() {
             var count = 0;
             for (var i = 0; i < fakeColsNb; i++) {
               //For each column, create a new wrapper div
-              var fakeCol = $('<div class="fake-col-wrapper"></div>').appendTo(el);
+              var fakeCol = $('<div class="fake-col-wrapper"></div>').appendTo(le);
               for (var j = 0; j < rowsNb; j++) {
                 //For each row in said column, calculate which slide should be present
                 var index = Math.floor(count / perPage) * perPage + (i % colsNb) + j * colsNb;
@@ -264,7 +266,7 @@ $(document).ready(function() {
   
             if (reInit) {
               //re-init carousel with new markup
-              carousel = el.owlCarousel(carouselOptions);
+              carousel = le.owlCarousel(carouselOptions);
             }
           }
         };
@@ -278,7 +280,7 @@ $(document).ready(function() {
     }
   
     //init
-    carousel = el.owlCarousel(carouselOptions);
+    carousel = le.owlCarousel(carouselOptions);
   });
 
 

@@ -2,7 +2,7 @@
   padding-top: 50px;
   margin-bottom: 60px;
   margin-top: 180px;
-  @include media("<=991") {
+  @include media("<=991px") {
     margin-top: 0;
   }
   .shop-page-title {
@@ -54,6 +54,9 @@
         font-size: $font-xs;
       }
     }
+  }
+  @include media("<=1024.99px") {
+    width: 100%;
   }
 }
 
@@ -167,6 +170,9 @@
     border-radius: 10px;
     padding: 18px 0px 18px 30px;
     width: 220px;
+    @include media("<=tablet") {
+      width: 180px;
+    }
   }
   button {
     background: rgba(0, 0, 0, 0);
@@ -180,6 +186,9 @@
     text-transform: capitalize;
     text-align: center;
     margin-left: 40px;
+  }
+  @include media("<=tablet") {
+    margin-bottom: 40px;
   }
 }
 
@@ -198,6 +207,9 @@
       background: #ff0000;
       color: $light;
     }
+  }
+  @include media("<=tablet") {
+    display: none;
   }
 }
 
@@ -274,6 +286,9 @@
     width: 350px;
     float: right;
     justify-content: center;
+    @include media("<=tablet") {
+      width: 100%;
+    }
   }
 }
 
@@ -310,4 +325,11 @@
 
 .shopping-page-context-area {
   padding-bottom: 50px;
+}
+
+.userinfo-ml-25 {
+  margin-left: 25px;
+  @include media("<=1023.99px") {
+    margin-left: 0;
+  }
 }
